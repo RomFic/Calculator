@@ -1,6 +1,6 @@
 # Calculator
 
-For this project, I created a basic calculator. This calculator will be used entirely via the user interface.
+For this project, I've created a basic calculator.. This calculator will be used entirely via the user interface.
 
 ## Image
 
