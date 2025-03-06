@@ -1,0 +1,43 @@
+:root {
+    --body-background: #adadc5;
+    --calculator-background: rgb(88, 151, 209);
+    --calculator-box-shadow: rgba(0, 0, 0, 0.3)
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.calculator {
+    background-color: var(--calculator-background);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid;
+    max-width: 100%;
+    width: 400px;
+    box-shadow: 0 2px 3px var(--calculator-box-shadow);
+}
+
+#result {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px var(--calculator-box-shadow) inset;
+}
