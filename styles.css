@@ -26,29 +26,55 @@ body {
 
 .calculator {
     background-color: var(--calculator-background);
+    width: 300px;
+    height: 500px;
     padding: 20px;
     border-radius: 8px;
     border: 2px solid;
-    width: 500px;
-    height: 700px;
     box-shadow: 0 2px 3px var(--calculator-box-shadow);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-
+    gap: 40px;
 }
 
 
 #result {
     background-color: var(--display);
-    width: 100%;
-    padding: 10px;
+    width: 250px;
+    height: 50px;
+
     border: none;
     border-radius: 5px;
     box-shadow: 0 2px 3px var(--calculator-box-shadow) inset;
     cursor: default;
     outline: none;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.row {
+    display: flex;
+    gap: 8px
+}
+
+.row1 {
+    margin-bottom: 15px;
+}
+
+
+.button {
+    height: 60px;
+    width: 60px;
+    font-size: xx-large;
+    border-radius: 8px;
+    border: 2px solid;
 }
