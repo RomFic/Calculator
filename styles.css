@@ -3,7 +3,8 @@
     --calculator-background: rgb(88, 151, 209);
     --calculator-box-shadow: rgba(0, 0, 0, 0.3);
     --display: #9cc8ab;
-    --result: rgb(72, 105, 133);
+    --operators: rgb(99, 161, 180);
+    --result: rgb(76, 168, 117);
     --clear: rgb(207, 116, 116);
 }
 
@@ -82,6 +83,10 @@ body {
 
 .button:hover {
     background-color: #c4c9d6;
+}
+
+button.operator {
+    background-color: var(--operators);
 }
 
 .button:active {
