@@ -3,6 +3,7 @@
     --calculator-background: rgb(88, 151, 209);
     --calculator-box-shadow: rgba(0, 0, 0, 0.3);
     --display: #9cc8ab;
+    --number: rgba(221, 219, 219, 0.63);
     --operators: rgb(99, 161, 180);
     --result: rgb(76, 168, 117);
     --clear: rgb(207, 116, 116);
@@ -79,14 +80,19 @@ body {
     font-size: xx-large;
     border-radius: 8px;
     border: 1px solid;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #c4c9d6;
+    background-color: #ddd;
 }
 
 button.operator {
     background-color: var(--operators);
+}
+
+button.number {
+    background-color: var(--number);
 }
 
 .button:active {
@@ -102,4 +108,6 @@ button[data-value="="] {
 
 button[data-value="clear"] {
     background-color: var(--clear);
+    color: #fff;
+    border: 1px black solid;
 }
