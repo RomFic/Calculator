@@ -9,6 +9,11 @@
     --clear: rgb(207, 116, 116);
 }
 
+@font-face {
+    font-family: '7segment';
+    src: url(assets/font/7segment.ttf);
+}
+
 *,
 *::before,
 *::after {
@@ -58,6 +63,8 @@ body {
     box-shadow: 0 2px 3px var(--calculator-box-shadow) inset;
     cursor: default;
     outline: none;
+
+    font-family: '7segment', Helvetica, sans-serif;
 }
 
 
