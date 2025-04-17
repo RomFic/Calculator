@@ -47,7 +47,7 @@ body {
 
 /* -----------------------RESULT DISPLAY--------------------------- */
 
-#result {
+.display {
     background-color: var(--display);
     width: 250px;
     height: 60px;
