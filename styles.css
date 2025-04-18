@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 
@@ -55,7 +55,7 @@ body {
 .display {
     background-color: var(--display);
     width: 250px;
-    height: 60px;
+    height: 70px;
     margin-top: 8px;
 
     border: none;
@@ -65,6 +65,7 @@ body {
     outline: none;
 
     font-family: '7segment', Helvetica, sans-serif;
+    font-size: 26px;
 }
 
 
@@ -73,12 +74,12 @@ body {
 .buttons-container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .row {
     display: flex;
-    gap: 8px
+    gap: 6px
 }
 
 .button {
