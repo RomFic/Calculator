@@ -39,10 +39,12 @@ const divide = function (int1, int2) {
 
 
 const operate = function (operator, int1, int2) {
-
+    if (operator === '+') return add(int1, int2)
+    if (operator === '-') return subtract(int1, int2)
+    if (operator === '*') return multiply(int1, int2)
+    if (operator === '/') return divide(int1, int2)
 
 };
-
 
 
 
