@@ -65,5 +65,10 @@ const appendValue = function (buttonValue) {
     result.innerText += buttonValue;
 };
 
+// Event listener -> load 0 on display when first loading
+document.addEventListener('DOMContentLoaded', () => {
+    result.innerText = 0;
+});
+
 // Event listener -> avoid dragging the display result
 result.addEventListener('dragstart', (e) => e.preventDefault());
