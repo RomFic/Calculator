@@ -6,18 +6,21 @@ const buttons = document.querySelectorAll('.button');
 let number1 = '';
 let number2 = '';
 let operator = '';
-const operators = '+-*/';
-const numbers = '1234567890.'
+const operators = ['+', '-', '*', '/'];
+const numbers = [...Array(11).keys()];
 const equalStr = ' = ';
 
 buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
         const value = e.target.dataset.value;
+        const splitResult = result.innerText.split('+');
 
+        if (value === '=') {}
 
-
+        if (value === '.') {}
         if (value === 'clear') clearResult();
 
+        appendValue(value);
     })
 })
 
@@ -37,7 +40,7 @@ const multiply = function (int1, int2) {
 
 const divide = function (int1, int2) {
     if (int2 === 0) {
-        return "Cannot divide by 0";
+        return "No way!";
     };
 
     return `${equalStr}${(int1 / int2).toFixed(2)}`;
@@ -53,10 +56,12 @@ const operate = function (operator, int1, int2) {
     if (operator === '-') return subtract(int1, int2);
     if (operator === '*') return multiply(int1, int2);
     if (operator === '/') return divide(int1, int2);
+    return "Error";
 };
 
-
-
+const appendValue = function (buttonValue) {
+    result.innerText += buttonValue;
+};
 
 const clearResult = function () {
     result.innerText = '';
