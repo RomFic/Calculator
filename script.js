@@ -14,27 +14,7 @@ buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
         const value = e.target.dataset.value;
 
-        if (value === '=') {
-            if (result.innerText.includes('+')) {
-                const splitResult = result.innerText.split('+');
-                appendValue(operate('+', splitResult[0], splitResult[1]));
-            }
-            if (result.innerText.includes('-')) {
-                const splitResult = result.innerText.split('-');
-                appendValue(operate('-', splitResult[0], splitResult[1]));
-            }
-            if (result.innerText.includes('*')) {
-                const splitResult = result.innerText.split('*');
-                appendValue(operate('*', splitResult[0], splitResult[1]));
-            }
-            if (result.innerText.includes('/')) {
-                const splitResult = result.innerText.split('/');
-                appendValue(operate('/', splitResult[0], splitResult[1]));
-            }
 
-        } else {
-            appendValue(value);
-        }
 
         if (value === 'clear') clearResult();
 
@@ -76,9 +56,7 @@ const operate = function (operator, int1, int2) {
 };
 
 
-const appendValue = function (buttonValue) {
-    result.innerText += buttonValue;
-};
+
 
 const clearResult = function () {
     result.innerText = '';
@@ -91,3 +69,37 @@ const clearResult = function () {
 
 // Event listener -> avoid dragging the display result
 result.addEventListener('dragstart', (e) => e.preventDefault());
+
+
+
+
+
+
+
+
+// if (value === '=') {
+//     if (result.innerText.includes('+')) {
+//         const splitResult = result.innerText.split('+');
+//         appendValue(operate('+', splitResult[0], splitResult[1]));
+//     }
+//     if (result.innerText.includes('-')) {
+//         const splitResult = result.innerText.split('-');
+//         appendValue(operate('-', splitResult[0], splitResult[1]));
+//     }
+//     if (result.innerText.includes('*')) {
+//         const splitResult = result.innerText.split('*');
+//         appendValue(operate('*', splitResult[0], splitResult[1]));
+//     }
+//     if (result.innerText.includes('/')) {
+//         const splitResult = result.innerText.split('/');
+//         appendValue(operate('/', splitResult[0], splitResult[1]));
+//     }
+
+// } else {
+//     appendValue(value);
+// }
+
+
+// const appendValue = function (buttonValue) {
+//     result.innerText += buttonValue;
+// };
